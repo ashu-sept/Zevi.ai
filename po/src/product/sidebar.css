@@ -1,0 +1,109 @@
+.itemArea{
+    display:flex;
+    column-gap: 50px;
+}
+.sidebar{
+    height: 100%;
+    width: 15%;
+    
+}
+.checkbox-container {
+    display: flex;
+    /* align-items: center; */
+    margin: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 10px;
+    margin-top: 5px;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #000;
+    border: 2px solid #000;
+}
+
+label {
+    cursor: pointer;
+}
+/* Accordion container */
+.accordion {
+  border-bottom: 2px solid rgba(128, 128, 128, 0.507);
+    margin-bottom: 10px;
+    height: fit-content;
+
+  }
+  
+  /* Header styles */
+  .accordion-header {
+    border-bottom: none;
+    color: #090909;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none; /* Prevent text selection when clicking */
+  }
+  
+  /* Arrow icon for open/closed state */
+  .arrow {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  
+  /* Content styles */
+  .accordion-content {
+    display: none;
+    padding: 10px;
+    
+  }
+  
+
+
+  /* rating :start */
+  .rating {
+    display: inline-block;
+    font-size: 0;
+  }
+  
+  .star {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+  }
+  
+  .star:hover {
+    color: #ffbb00;
+  }
+  
+  .filled {
+    color: #ffbb00;
+  }
+    
+  /* Display content when open */
+  .accordion.open .accordion-content {
+    display: block;
+  }
+
+  .like-button {
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .like-button svg {
+    fill: #ccc;
+  }
+  
+  .like-button.liked svg {
+    fill: red;
+  }
+  
